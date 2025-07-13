@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kate Romero's Portfolio: Lab</title>
+
+    <meta name="description" content="The homepage of Kate Romero's professional portfolio">
+    <meta name="author" content="Kate Romero">
+    <meta name="GitHub:site" content="@kate-romero">
+    <meta name="LinkedIn:site" content="@romerokate">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <ol>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./work-experience.html">Work Experience</a></li>
+                <li><a href="./lab.html">Lab</a></li>
+            </ol>
+        </nav>
+        <h1>Kate Romero's Portfolio: Lab</h1>
+    </header>
+    <main>
+
+        <div>
+            <h2>Some of my favorites:</h2>
+            <ul>
+
+                <li>color: <span>blue</span></li>
+
+                <li>(copyright free) song: 
+                    <figure>
+                        <figcaption><cite>Rhapsody in Blue</cite></figcaption>
+                        <audio controls src="./audios/US_Marine_Band_Rhapsody_in_Blue.oga.mp3"></audio>
+                    </figure>
+                </li>
+
+                <li>movie:
+                    <details>
+                        <summary><cite>Ocean's 11</cite></summary>
+                        Fresh out of prison, debonair thief Danny Ocean assembles 
+                        a crew of specialists to pull off an elaborate heist of 
+                        three Las Vegas casinos. -Netflix 
+                    </details>
+                </li>
+
+                <li>poem:
+                    <article>
+                        <cite>Sick</cite> by Shel Silverstein
+                        <pre>
+                            "I cannot go to school today,"
+                            Said little Peggy Ann McKay.
+                            "I have the measles and the mumps,
+                            A gash, a rash and purple bumps.
+                            My mouth is wet, my throat is dry,
+                            I'm going blind in my right eye.
+                            My tonsils are as big as rocks,
+                            I've counted sixteen chicken pox
+                            And there's one more—that's seventeen,
+                            And don't you think my face looks green?
+                            My leg is cut—my eyes are blue—
+                            It might be instamatic flu.
+                            I cough and sneeze and gasp and choke,
+                            I'm sure that my left leg is broke—
+                            My hip hurts when I move my chin,
+                            My belly button's caving in,
+                            My back is wrenched, my ankle's sprained,
+                            My 'pendix pains each time it rains.
+                            My nose is cold, my toes are numb.
+                            I have a sliver in my thumb.
+                            My neck is stiff, my voice is weak,
+                            I hardly whisper when I speak.
+                            My tongue is filling up my mouth,
+                            I think my hair is falling out.
+                            My elbow's bent, my spine ain't straight,
+                            My temperature is one-o-eight.
+                            My brain is shrunk, I cannot hear,
+                            There is a hole inside my ear.
+                            I have a hangnail, and my heart is—what?
+                            What's that? What's that you say?
+                            You say today is. . .Saturday?
+                            G'bye, I'm going out to play!"
+                        </pre>
+                    </article>
+                </li>
+
+                <li>quote:
+                    <blockquote>
+                        "It's bad luck to to be superstitious"
+                    </blockquote>
+                    - My Dad
+                </li>
+
+                <li>family & friend phrases:
+                    <dl>
+                        <dt>double-oon magic</dt>
+                        <dd>Erases the last few moments from time. Said after making a mistake</dd>
+                        "Three smart men, the smelt fa - <dfn>double--oon magic!</dfn>
+                        Three smart men, they felt smart"
+
+                        <dt>for you to taste it</dt>
+                        <dd>To taste</dd>
+                        "Add salt <dfn>for you to taste it</dfn>."
+                    </dl>
+                </li>
+
+                <li>website: numberonewhaleburtfans.com TODO:fix
+                    <iframe
+                        src="https://www.numberonewhalebertfans.com/"
+                        name="whaleburt"
+                        id="whaleburt"
+                        width="400"
+                        height="300">
+                    </iframe>
+                </li>
+
+                <li>
+                    <table border="1">
+                        <caption>Courses:</caption>
+                        <colgroup>
+                            <col>
+                            <col span="4">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col" rowspan="2">Division</th>
+                                <th scope="colgroup" colspan="3">Subject Area</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">CSE</th>
+                                <th scope="col">Teaching</th>
+                                <th scope="col">Elective</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Upper</th>
+                                <td>CSE 190B</td>
+                                <td>EDS 142B</td>
+                                <td>COGS 111</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Lower</th>
+                                <td>CSE 30</td>
+                                <td>MGT 18</td>
+                                <td>LTSP 2C</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+
+            </ul>
+        </div>
+
+        <div>
+            <h2>Share your favorites:</h2>
+
+            <form action="./form-handler.html" method="POST">
+
+                <label for="food">food:
+                    <input list="food-list" id="food" name="food" />
+                </label>
+
+                <datalist id="food-list">
+                    <option value="Italian"></option>
+                    <option value="Mexican"></option>
+                    <option value="Japanese"></option>
+                    <option value="sweets"></option>
+                </datalist>
+                
+                <label for="hobby">hobby:
+                    <select id="hobby">
+                        <optgroup label="Outdooor">
+                            <option>hiking</option>
+                            <option>surfing</option>
+                            <option>gardening</option>
+                        </optgroup>
+                        <optgroup label="Indoor">
+                            <option>gaming</option>
+                            <option>painting</option>
+                            <option>reading</option>
+                        </optgroup>
+                    </select>
+                </label>
+
+                hold the <kbd>Ctrl</kbd>, <kbd>Cmmd</kbd>, or <kbd>Shift</kbd> 
+                to click multiple.
+
+                <button type="submit">submit</button>
+            </form>
+            
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+
+</body>
+</html>
