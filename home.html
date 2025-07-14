@@ -53,6 +53,7 @@
                     return 0;
                 }
         </code>
+        <hello-world></hello-world>
 
         <h2>Contacts & Links</h2>
 
@@ -66,7 +67,7 @@
 
 
         <!-- TODO: fix form action -->
-        <form action="./form-handler.html" method="POST">
+        <form action="/form-handler" method="POST">
 
             <label>Name:
                 <input type="text" name="name" required>
@@ -111,6 +112,18 @@
 
             <button type="submit">Submit</button>
         </form>
+
+        <script>
+            // Define a new custom element called <hello-world>
+            class HelloWorld extends HTMLElement {
+                connectedCallback() {
+                    console.log("Hello, World!");
+                }
+            }
+
+            // Register the custom element
+            customElements.define('hello-world', HelloWorld);
+        </script>
         
     </main>
 
