@@ -27,6 +27,25 @@
     </header>
     <main>
 
+        <dialog open>
+            Mouse over the screen to find a hidden green rectangle!
+            <form method="dialog">
+                <button>Start Sleuthing</button>
+            </form>
+        </dialog>
+
+        <label for="site-progress">Site Progress:
+        <progress id="site-progress" max="100" value="33">33%</progress>
+        </label>
+
+        <template>
+            <img src="./images/easter_egg.png" >
+            <!-- art by ArtRose on Pixabay -->
+            You found it!
+            <noscript>Some call disabling javascript clever, 
+                others call it cheating . . .</noscript>
+        </template>
+
         <div>
             <h2>Some of my favorites:</h2>
             <ul>
@@ -121,11 +140,11 @@
                     </ul>
                 </li>
 
-                <li>website: numberonewhaleburtfans.com TODO:fix
+                <li>website:
                     <iframe
-                        src="https://www.numberonewhalebertfans.com/"
-                        name="whaleburt"
-                        id="whaleburt"
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=ngPrk_0PMXVmM2Ic"
+                        name="rickroll"
+                        id="rickroll"
                         width="400"
                         height="300">
                     </iframe>
@@ -169,10 +188,16 @@
             </ul>
         </div>
 
+        <canvas width="200" height="100" style="border:1px solid #000;">
+        green rectangle labeled "not here"
+        </canvas>
+
         <div>
             <h2>Share your favorites:</h2>
 
-            <form action="./form-handler.html" method="POST">
+
+            <!-- TODO: fix form action -->
+            <form method="POST">
 
                 <label for="food">food:
                     <input list="food-list" id="food" name="food">
@@ -205,13 +230,44 @@
 
                 <button type="submit">submit</button>
             </form>
-            
+        </div>
+
+        <div>
+            <h2>Remaining lab tasks:</h2>
+
+            I can <ins>insert text</ins> and <del>delete it.</del>
+
+            <search role="search">
+                <form>
+                    <input type="search" placeholder="Search..." size="20">
+                </form>
+            </search>
+
+            <p> here is an 
+                <svg width="50" height="75">
+                    <circle cx="0" cy="75" r="75" fill="yellow" />
+                </svg> 
+            inline &lt;svg&gt; use.</p>
         </div>
     </main>
     <footer>
 
     </footer>
 
+    <script>
+        const canvas = document.querySelector("canvas");
+        const ctx = canvas.getContext("2d");
+        function drawRedHerring() {
+            // Draw the red rectangle
+            ctx.fillStyle = "red";
+            ctx.fillRect(0, 0, 200, 100);
+            // Set text properties
+            ctx.fillStyle = "white";
+            ctx.font = "16px Arial";
+            ctx.fillText("RED HERRING", 40, 60); // Draw text at position (x, y)
+        }
+        drawRedHerring();
+    </script>
 
 </body>
 </html>
